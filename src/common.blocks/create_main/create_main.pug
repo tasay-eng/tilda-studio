@@ -1,0 +1,10 @@
+include ../til_company_form/til_company_form.pug
+include ../small.blocks/tilda_logo/tilda_logo.pug
+
+mixin create_main(class_adit)
+    div(class='create_main '+class_adit)
+        +tilda_logo()
+        div.create_container
+            div.cr_img_wrap
+                img(src="../../img/bg 1_ 1.png" class='create_img')
+            +til_company_form()

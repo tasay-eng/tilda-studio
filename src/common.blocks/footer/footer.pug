@@ -1,0 +1,19 @@
+- let footer_list = ['о нас', 'разработка сайтов', 'поддержка', 'цены', 'контакты']
+
+mixin footer_main(fot_class)
+    footer(class= 'footer_main '+fot_class)
+        div.footer_info
+                ul.navigate_list
+                    each val, key in footer_list
+                        li(class='list_'+key)
+                            a(href='#' class="link_"+key)= val
+
+
+        div.footer_social
+            ul.social_icons
+                li
+                    i(class="fab fa-twitter")
+                li
+                    i(class="fab fa-facebook-square")
+                li
+                    i(class="fab fa-instagram")

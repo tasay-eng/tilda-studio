@@ -1,0 +1,58 @@
+.cost_card{
+    mix-blend-mode: normal;
+    width: 20%;
+    color: black;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    
+    .cost_wrap_img{
+        width: 40%;
+        margin: 7% 10% auto auto;
+        .cost_img{
+            width: 100%;
+        }
+    }
+    h3{
+        .card_header();
+        font-weight: normal;
+    }
+    .serv_price{
+        text-align: center;
+        font-size: 55%;
+        line-height: 100%;
+    }
+    .service_sheat{
+        text-align: left;
+        list-style-type: none;
+        font-size: 55%;
+        line-height: 100%;
+        padding: 0;
+        margin: 5% auto 10% 10%;
+        li{
+            padding: 6% 0 0 0;
+            &:nth-child(1){
+                padding: 0;
+            }
+        }
+    }
+    .order_btn{
+        font-size: 65%;
+        width: 80%;
+        margin: 0 auto 7% auto;
+    }
+}
+
+.c_card0, .c_card2{
+    background: #fff;
+    background: linear-gradient(-30deg, #fff 60%, #C4C4C4 0) bottom right;
+}
+.c_card1{
+    background: #fff;
+    background: linear-gradient(30deg, #fff 60%, #C4C4C4 0) bottom left;
+}
+.c_card1, .c_card2{
+    margin: 0 0 0 2%;
+}

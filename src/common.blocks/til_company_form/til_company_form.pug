@@ -1,0 +1,7 @@
+include ../small.blocks/button/button.pug
+
+mixin til_company_form()
+    form(class='til_company_form')
+        h1(class='header_til')= "Создание сайтов на Tilda"
+        p(class='descr_til')= "мы разрабатываем корпоротивные сайты интернет- магазины и лендинги"
+        +button('create_btn', 'подробнее')

@@ -1,0 +1,18 @@
+doctype html
+html(lang='ru')
+    block config
+        include ../../config/config.pug
+    head
+        block head
+            meta(charset='utf-8')
+            title #{pageName} | DJ-STORE
+            meta(name='description' content= pageDesc)
+            link(href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet")
+            link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+            meta(name="viewport" content="width=device-width, initial-scale=1")
+    body(class= bodyclass)
+        block header
+
+        block content
+
+        block footer

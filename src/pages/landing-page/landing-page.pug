@@ -1,0 +1,30 @@
+extends ../template-page/template.pug
+append config
+    include ../../config/config.pug
+    include ../../common.blocks/footer/footer.pug
+    include ../../common.blocks/create_main/create_main.pug
+    include ../../common.blocks/studio_descript/studio_descript.pug
+    include ../../common.blocks/list_of_advantages/list_of_advantages.pug
+    include ../../common.blocks/list_of_costs/list_of_costs.pug
+    include ../../common.blocks/steps_list/steps_list.pug
+    include ../../common.blocks/active_menu/active_menu.pug
+    include ../../common.blocks/list_of_works/list_of_works.pug
+    - pageName= 'Главная страница'
+    - pageDesc= 'Страница 1'
+    - bodyclass= 'body-land'
+prepend head
+
+block content
+    div(class= 'landing_wrapper')
+        +active_menu()
+        div(class= 'blocks_container')
+            +create_main('block_item')
+            +studio_descript('block_item')
+            +list_of_advantages('block_item')
+            +list_of_costs('block_item')
+            +list_of_works('block_item')
+            +steps_list('block_item')
+            +footer_main('block_item')
+
+    
+    

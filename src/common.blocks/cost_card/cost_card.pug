@@ -1,0 +1,12 @@
+include ../small.blocks/button/button.pug
+
+mixin cost_card(num, image_src, header, cost, service_list)
+    form(class= 'cost_card c_card'+num)
+        div.cost_wrap_img
+            img(class='cost_img' src= image_src)
+        h3= header
+        p.serv_price= cost
+        ul.service_sheat
+            each val in service_list
+                li= val
+        +button('order_btn', 'заказать')

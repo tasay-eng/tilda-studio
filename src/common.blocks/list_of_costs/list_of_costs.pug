@@ -1,0 +1,14 @@
+include ../cost_card/cost_card.pug
+
+-let images_c = ['../../img/карточка 3.png', '../../img/карточка_1 1.png', '../../img/карточка_2 1 (2).png']
+-let c_headers = ['Landing page', 'Корпоративный', 'Интернет - магазин']
+-let service_list = ['Персональный хостинг', 'Домен в подарок', 'Краткое руководство', 'Техническая консультация', 'Адаптивный дизайн', 'Контентая поддержка']
+-let costs = ['20 000  рублей', '35 000  рублей', '75 000  рублей']
+
+mixin list_of_costs(class_adit)
+    div(class='list_of_costs '+class_adit)
+        h2.header_c Стоимость 
+        div.costs_sheat
+            each val, key in images_c
+                +cost_card(key, val, c_headers[key], costs[key], service_list)
+        

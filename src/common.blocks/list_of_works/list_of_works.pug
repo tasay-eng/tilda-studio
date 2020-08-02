@@ -1,0 +1,8 @@
+mixin list_of_works(class_adit)
+    div(class="list_of_works "+class_adit)
+        h2 Наши работы
+        -let n = 0
+        while n < 8
+            div(class="work_image w_img"+n)
+            - n++
+
