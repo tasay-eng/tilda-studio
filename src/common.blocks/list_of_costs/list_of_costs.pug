@@ -5,8 +5,8 @@ include ../cost_card/cost_card.pug
 -let service_list = ['Персональный хостинг', 'Домен в подарок', 'Краткое руководство', 'Техническая консультация', 'Адаптивный дизайн', 'Контентая поддержка']
 -let costs = ['20 000  рублей', '35 000  рублей', '75 000  рублей']
 
-mixin list_of_costs(class_adit)
-    div(class='list_of_costs '+class_adit)
+mixin list_of_costs(class_adit, id_block)
+    div(class='list_of_costs '+class_adit, id=id_block)
         h2.header_c Стоимость 
         div.costs_sheat
             each val, key in images_c

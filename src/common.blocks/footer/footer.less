@@ -1,16 +1,35 @@
 .footer_main {
-  margin: 0 auto;
+  margin: 5% auto 0 auto;
+  color: #fff;
   background: #FA8669;
+  position: relative;
+  padding: 2% 25%;
+  font-size: 70%;
   .footer_info {
     .navigate_list {
+      padding: 0;
+      margin: 0 0 1.5% 0;
       .flex();
       .lists();
+      a{
+        text-decoration: none;
+        color: #fff;
+      }
+
     }
   }
   .footer_social {
     .social_icons {
+      margin: 0;
+      padding: 0;
       .flex();
+      justify-content: center;
       .lists();
+      .icon_item{
+        &:nth-child(2){
+          margin-left: 2%;
+        }
+      }
     }
   }
 }

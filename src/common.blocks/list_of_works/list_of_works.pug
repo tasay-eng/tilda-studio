@@ -1,8 +1,9 @@
-mixin list_of_works(class_adit)
-    div(class="list_of_works "+class_adit)
+mixin list_of_works(class_adit, id_block)
+    div(class="list_of_works "+class_adit id=id_block)
         h2 Наши работы
-        -let n = 0
-        while n < 8
-            div(class="work_image w_img"+n)
-            - n++
+        div.works_sheat
+            -let n = 0
+            while n < 8
+                div(class="work_image w_img"+n)
+                - n++
 

@@ -18,12 +18,12 @@ block content
     div(class= 'landing_wrapper')
         +active_menu()
         div(class= 'blocks_container')
-            +create_main('block_item')
-            +studio_descript('block_item')
-            +list_of_advantages('block_item')
-            +list_of_costs('block_item')
-            +list_of_works('block_item')
-            +steps_list('block_item')
+            +create_main('block_item', 'create_block')
+            +studio_descript('block_item', 'studio_block')
+            +list_of_advantages('block_item', 'advantage_block')
+            +list_of_costs('block_item', 'costs_block')
+            +list_of_works('block_item', 'works_block')
+            +steps_list('block_item', 'steps_block')
             +footer_main('block_item')
 
     
