@@ -41,7 +41,17 @@ module.exports = {
             {
                 test: /\.pug$/,
                 exclude: /node_modules/,
-                loaders: ['html-loader', 'pug-html-loader']
+                use:[{ 
+                    loader: 'html-loader',
+                    options: {
+                        pretty: true,
+                    }},
+                    { 
+                    loader: 'pug-html-loader',
+                    options: {
+                        pretty: true,
+                    }},
+                ]
             },
             {
                 test: /\.(jpg|png|svg|jpeg)$/,

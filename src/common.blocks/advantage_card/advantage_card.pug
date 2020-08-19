@@ -1,7 +1,8 @@
 include ../small.blocks/button/button.pug
 
 mixin advantage_card(num, img_src, header, text)
-    form(class= 'advantage_card a_card_'+num action= "url")
+    // Карточка Блока 3 - с одним преимуществом кампании
+    div(class= 'advantage_card a_card_'+num action= "url")
         div.image_round
             img(class='adv_img'+num src= img_src)
         h3= header
